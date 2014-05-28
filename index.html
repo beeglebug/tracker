@@ -1,0 +1,20 @@
+<!doctype html>
+<html ng-app="countApp">
+<head>
+	<link rel="shortcut icon" sizes="196x196" href="nice-highres.png">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app" ng-controller="CountCtrl" ng-class="{'over':over}">
+<div class="date">{{today|date:'EEEE MMMM d y'}}</div>
+<div class="total">{{total}}<small>/{{target}}</small></div>
+<input type="number" ng-model="addAmount" class="addAmount" value="100" select-on-click>
+<button ng-click="addToTotal()" class="addBtn">add</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+.app {
+	background-color: #8FC931;
+	text-align: center;
+	color: rgba(0,0,0,0.5);
+	font-family: 'Gill Sans MT', 'Gill Sans', Arial, sans-serif;
+	overflow: auto;
+	height: 100%;
+}
+
+.app.over {
+	background-color: #CF542B;
+}
+
+.date {
+	font-size: 1.6em;
+	margin-top: 1em;
+}
+
+.total {
+	font-size: 5em;
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+
+
+.total small {
+	font-size: 0.5em;
+	font-weight: normal;
+}
+
+.addAmount {
+	background-color: rgba(0,0,0,0.2);
+	border: none;
+	border-radius: 0.5em;
+	color: #FFF;
+	font-size: 2em;
+	width: 50%;
+	padding: 0.3em 0;
+	text-align: center;
+}
+
+input, button {
+	outline: none;
+	margin: 0;
+}
+
+.addBtn {
+	background-color: rgba(0,0,0,0.5);
+	color: #FFF;
+	border: none;
+	border-radius: 0.5em;
+	padding: 0.3em .8em;
+	font-size: 2em;
+	margin-left: 0.3em;
+}
+
+/* fix for spinners */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
